@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>サーバー監視ログ管理パネル</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f6f9; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 0; }
+        .meta { color: #7f8c8d; font-size: 0.9em; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #34495e; color: #fff; }
+        tr:hover { background-color: #f9f9f9; }
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 0.85em; font-weight: bold; color: #fff; }
+        .badge-delete { background-color: #e74c3c; }
+        .badge-edit { background-color: #f39c12; }
+        .badge-vc { background-color: #2ecc71; }
+        .detail { background: #f8f9fa; padding: 6px 10px; border-left: 3px solid #bdc3c7; font-family: monospace; font-size: 0.95em; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 サーバー監視ログ管理パネル</h1>
+        <div class="meta">最終更新日時: 2026年06月12日 00:28:02 | 総ログ件数: 5件</div>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 15%;">日時</th>
+                    <th style="width: 12%;">種類</th>
+                    <th style="width: 18%;">ユーザー</th>
+                    <th style="width: 15%;">対象部屋</th>
+                    <th style="width: 40%;">詳細内容</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><small>2026/06/12</small><br><strong>00:00:29</strong></td>
+                    <td><span class="badge badge-vc">📥 VC参加</span></td>
+                    <td><code>haruh419</code></td>
+                    <td>#徹夜モード</td>
+                    <td><div class="detail">【徹夜モード】に参加しました</div></td>
+                </tr>
+                <tr>
+                    <td><small>2026/06/12</small><br><strong>00:00:29</strong></td>
+                    <td><span class="badge badge-vc">📤 VC退出</span></td>
+                    <td><code>haruh419</code></td>
+                    <td>#一般</td>
+                    <td><div class="detail">【一般】から退出しました</div></td>
+                </tr>
+                <tr>
+                    <td><small>2026/06/12</small><br><strong>00:00:24</strong></td>
+                    <td><span class="badge badge-vc">📥 VC参加</span></td>
+                    <td><code>haruh419</code></td>
+                    <td>#一般</td>
+                    <td><div class="detail">【一般】に参加しました</div></td>
+                </tr>
+                <tr>
+                    <td><small>2026/06/12</small><br><strong>00:00:24</strong></td>
+                    <td><span class="badge badge-vc">📤 VC退出</span></td>
+                    <td><code>haruh419</code></td>
+                    <td>#徹夜モード</td>
+                    <td><div class="detail">【徹夜モード】から退出しました</div></td>
+                </tr>
+                <tr>
+                    <td><small>2026/06/12</small><br><strong>00:00:20</strong></td>
+                    <td><span class="badge badge-delete">🗑️ 削除</span></td>
+                    <td><code>haruh419</code></td>
+                    <td>#徹夜モード</td>
+                    <td><div class="detail">内容: !volume 0.5</div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
